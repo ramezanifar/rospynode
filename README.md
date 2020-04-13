@@ -1,7 +1,7 @@
 # rospynode
 A python class to connect to ROS (1 or 2) using rosbridge v2.0 Protocol
 # Problem statement
-There is an application in windows that needs to connect to ROS. Tis class can help to join the application to the ROS network. 
+There is an application in windows that needs to connect to the ROS network. This class can help with that.
 # Introduction
 This work is inspired by [roslibpy](https://github.com/gramaziokohler/roslibpy). First I started using roslibpy for my application. The problem that I have with roslibpy was that it had a feature to reconnect when connection from client to server was down. So, sometimes reconnect was happening with latency and I didn't know when to give up and reconnect. Sometimes, if I wanted to disconnect, the auto reconnect was overruling my command.
 I needed full control and flexibility to open or close the connection whenever needed. This project was created to address this need. It allows the user to start the connection, check the connection, reconnect if connection is down and disconnect.

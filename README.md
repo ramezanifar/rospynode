@@ -1,5 +1,5 @@
 # rospynode
-A python class to connect to ROS (1 or 2) using rosbridge v2.0 Protocol
+A python (version2 and 3) class to connect to ROS (1 or 2) using rosbridge v2.0 Protocol
 # Problem statement
 There is an application in windows that needs to connect to the ROS network. This class can help with that.
 # Introduction
@@ -11,6 +11,8 @@ This program is according to the [rosbridge V2.0 Protocol](https://github.com/Ro
 3- unadvertise  
 4- subscribe  
 5- unsubscribe  
+# Prerequisite
+Install websocket-client module from [here](https://github.com/websocket-client/websocket-client).
 # Basic usage  
 ```python
 from rospynode import Client

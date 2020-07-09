@@ -8,7 +8,7 @@ class Client:
     '''This class creates a ROS client that connects to ROS network via rosbridge'''
     def __init__(self,traceable=True, handler=logging.NullHandler(), host='localhost', port=9090):
         # Initializations
-        self.url = "WS://{}.{}".format(host, port)  # web socket url
+        self.url = "WS://{}:{}".format(host, port)  # web socket url
         self.request_to_connect = False  # This flag is used as a command and initiates a connection to server
         self.is_connected = False  # This flag shows whether this client is connected to the rosbridge server
         self.is_connecting = False  # This flag is used to show when client is trying to connect to rosbridge. So it is busy. It is a transiton from not connected to connected. When this flag is true, a new command to connect to the server should not be issued
